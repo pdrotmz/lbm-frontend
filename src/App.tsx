@@ -1,5 +1,5 @@
 import './App.css'
-import RegisterForm from './components/register/RegisterForm'
+import RegisterForm from './components/register'
 
 function App() {
 
