@@ -5,16 +5,51 @@
     align-items: center;
     height: 100vh;
     gap: 1rem;
-    background-color: purple;
+    background-color: white;
+    background: url('./images/bckgrnd-lbm.jpg');
+    background-size: 100%;
+    background-position: center;
 
     .form {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 0.5rem;
+        gap: 1rem;
     }
+
+    p{
+        color: #4778ff;
+        font-size: 32px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .form input {
+        border-radius: 5px;
+        width: 50vh;
+        height: 40px;
+        padding: 0px 0px 0px 10px;
+    }
+
+    .form input::placeholder{
+        font-family: 'Courier New', Courier, monospace;
+        padding: 5px;
+        outline: none;
+    }
+
+    button {
+        background-color: #4778ff;
+        color: #EDF1FF;
+        border-radius: 5px;
+        width: 30vh;
+        height: 40px;
+        border: 0ric;
+        font-size: 32px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    button:hover{
+        cursor: pointer;
+    }
+
 }
-
-
-
