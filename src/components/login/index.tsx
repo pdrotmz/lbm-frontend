@@ -2,8 +2,11 @@ import { useState } from "react"
 import LoginProps from "../../types/login"
 import axios, { AxiosError } from "axios"
 import logo from '../../assets/images/lbm-logo.jpg'
+import { useNavigate } from "react-router-dom"
 
 const LoginForm = () => {
+
+  const navigate = useNavigate();
 
     const[formData, setFormData] = useState<LoginProps> ({
         email: '',
@@ -32,6 +35,9 @@ const LoginForm = () => {
     
             setSuccessMessage('Sucesso ao logar')
             console.log(response.data)
+
+            navigate('/teacher-area');
+
         } catch (error){
             if(error instanceof AxiosError) {
                 setErrorMessage('Erro ao logar !')
