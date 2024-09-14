@@ -3,8 +3,11 @@ import logo from '../../assets/images/lbm-logo.jpg'
 import React, { useState } from 'react';
 import registerProps from '../../types/register';
 import axios, { AxiosError } from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const RegisterForm = () => {
+
+  const navigate = useNavigate();
 
   const[formData, setFormData] = useState<registerProps>({
     username: '',
@@ -32,6 +35,8 @@ const RegisterForm = () => {
     try {
       const response = await axios.post('http://localhost:8080/auth-teacher/register', formData, { withCredentials: true });
   
+      navigate('/teacher-area')
+
       setSuccessMessage('Usuário registrado com sucesso !');
       console.log(response.data)
     } catch (error) {
