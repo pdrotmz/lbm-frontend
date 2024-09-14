@@ -1,13 +1,17 @@
+import './style.scss'
+
 const Navbar = () => {
   return (
     <>
         <nav>
-            <head>
-                <ul>Postar Video<li></li>
-                <li>Meus Videos</li>
-                <li>Editar Video</li>
-                <li>Excluir Video</li></ul>
-            </head>
+            <header>
+                <ul>
+                    <li><a href="">Postar Video </a></li>
+                    <li><a href="">Meus Videos</a></li>
+                    <li><a href="">Editar Video</a></li>
+                    <li><a href="">Excluir Video</a></li>
+                </ul>
+            </header>
         </nav>
     </>
   )
