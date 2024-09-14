@@ -1,5 +1,5 @@
 import './style.scss'
-import logo from './images/lbm-logo.jpg';
+import logo from '../../assets/images/lbm-logo.jpg'
 import React, { useState } from 'react';
 import registerProps from '../../types/register';
 import axios, { AxiosError } from 'axios';
@@ -30,7 +30,7 @@ const RegisterForm = () => {
     setSuccessMessage(null);
 
     try {
-      const response = await axios.post('https://lbm.onrender.com/auth-teacher/register', formData, { withCredentials: true });
+      const response = await axios.post('http://localhost:8080/auth-teacher/register', formData, { withCredentials: true });
   
       setSuccessMessage('Usuário registrado com sucesso !');
       console.log(response.data)
