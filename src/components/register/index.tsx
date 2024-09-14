@@ -33,7 +33,7 @@ const RegisterForm = () => {
     setSuccessMessage(null);
 
     try {
-      const response = await axios.post('http://localhost:8080/auth-teacher/register', formData, { withCredentials: true });
+      const response = await axios.post('https://lbm.onrender.com/auth-teacher/register', formData, { withCredentials: true });
   
       navigate('/teacher-area')
 
