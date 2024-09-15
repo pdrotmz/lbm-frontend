@@ -72,7 +72,7 @@ const LoginForm = () => {
                     onChange={handleChange}
                     required/>
               </div>
-              <button type='submit'>Register</button>
+              <button type='submit'>Sign in</button>
     
               {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
               {successMessage && <p style={{ color: 'green' }}>{successMessage}</p>}
