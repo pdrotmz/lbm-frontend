@@ -35,7 +35,7 @@ const RegisterForm = () => {
     try {
       const response = await axios.post('https://lbm.onrender.com/auth-teacher/register', formData, { withCredentials: true });
   
-      navigate('/teacher-area')
+      navigate('/login')
 
       setSuccessMessage('Usuário registrado com sucesso !');
       console.log(response.data)
