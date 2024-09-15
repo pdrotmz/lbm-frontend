@@ -9,6 +9,10 @@ const RegisterForm = () => {
 
   const navigate = useNavigate();
 
+  const redirectToLogin = () => {
+    navigate('/login');
+  }
+
   const[formData, setFormData] = useState<registerProps>({
     username: '',
     email: '',
@@ -80,6 +84,7 @@ const RegisterForm = () => {
                 required/>
           </div>
           <button type='submit'>Register</button>
+          <button type='submit' onClick={redirectToLogin}>Login</button>
 
           {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
           {successMessage && <p style={{ color: 'green' }}>{successMessage}</p>}
