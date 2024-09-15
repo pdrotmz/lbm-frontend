@@ -4,21 +4,20 @@
     box-sizing: border-box;
   }
   
-  /* Ajuste para a navbar */
   nav {
     width: 100%;
     background-color: #4778ff;
-    position: fixed; /* Fixa a navbar no topo */
+    position: fixed; 
     top: 0;
-    left: 0; /* Certifica que a navbar começa no lado esquerdo */
+    left: 0; 
   }
   
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Flexbox para distribuir os links */
-    justify-content: space-evenly; /* Espaçamento uniforme entre os links */
+    display: flex; 
+    justify-content: space-evenly; 
     align-items: center;
     height: 60px;
   }
