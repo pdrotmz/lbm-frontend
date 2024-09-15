@@ -4,7 +4,7 @@ import {
 import "../components/register/style.scss";
 import RegisterForm from "../components/register";
 import LoginForm from "../components/login";
-import Navbar from "../components/navbar";
+import HomePage from "../components/home";
 
 export const router = createBrowserRouter([
   {
@@ -19,6 +19,6 @@ export const router = createBrowserRouter([
 
   {
     path: "/teacher-area",
-    element: <Navbar />
-  }
+    element: <HomePage />
+  },
 ]);
