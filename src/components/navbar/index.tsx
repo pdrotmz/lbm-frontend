@@ -1,5 +1,6 @@
 import './style.scss'
 
+
 const Navbar = () => {
   return (
     <>
