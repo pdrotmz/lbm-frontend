@@ -1,0 +1,22 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    gap: 1rem;
+    padding: 0.5rem;
+    background-color: white;
+    flex-wrap: wrap; 
+
+    .image-home {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%; 
+            max-width: 750px; 
+        }
+    }
+}
